@@ -9,6 +9,10 @@ module counter #(
         if (arst) count<='0;
         else if (en) count <= count+1'b1;
         else count <= count-1'b1;
+        // Lint clean versions
+        // else count <= count + (WIDHT)'b1;
+        // else count <= count + 'd1;
+        // else count <= count + {{(WIDTH-1){1'b0}}, 1'b1};
     end
 endmodule
 
