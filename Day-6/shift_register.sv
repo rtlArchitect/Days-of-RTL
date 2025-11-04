@@ -11,7 +11,5 @@ module shift_reg #(
         // else out <= {inp, out[WIDTH-1:1]}; // right shift
 
         // else out <= {out[WIDTH-2:0], out[WIDTH-1]}; // rotate left shift
-
     end
 endmodule
-
